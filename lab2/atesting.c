@@ -12,7 +12,6 @@ void anak(){
 }
 
 void makpak(){
-	wait(NULL);
 	printf("Job is done.\n\n");
 }
 
@@ -25,10 +24,10 @@ int main(void){
 			exit(0);
 		}
 		else{
-			makpak();
+			wait(NULL);
 		}
 	}
-
+	makpak();
 	return EXIT_SUCCESS;
 }
 
